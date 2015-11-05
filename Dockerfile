@@ -3,9 +3,6 @@ MAINTAINER Michael COULLERET <michael.coulleret@vesperiagroup.com>
 
 RUN apt-get update
 
-# Install MySQL
-RUN apt-get install -y mysql-server mysql-client libmysqlclient-dev
-
 # Install Apache
 RUN apt-get install -y apache2
 

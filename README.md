@@ -2,7 +2,6 @@ Symfony sandbox Linux Apache PHP
 =======
 
 ![enter image description here](https://circleci.com/gh/mcolabs/lap-symfony.svg?style=shield&circle-token=:circle-token)
-[![Build Status](https://travis-ci.org/mcolabs/lap-symfony.svg)](https://travis-ci.org/mcolabs/lap-symfony)
 
 Build image:
 ---------------

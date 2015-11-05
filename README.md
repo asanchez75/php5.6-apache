@@ -1,1 +1,1 @@
-README.md
+docker run -d -p 80:80 20uf/lap-symfony

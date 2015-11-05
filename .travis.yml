@@ -1,0 +1,10 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+before_install:
+- docker pull docker pull 20uf/lap-symfony
+- docker run -d -p 127.0.0.1:80:80 20uf/lap-symfony /bin/sh

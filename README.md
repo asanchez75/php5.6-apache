@@ -11,7 +11,7 @@ Build image:
 Run
 ---------------
 
-    docker run -d -p 80:80 20uf/lap-symfony -v /your/project:/
+    docker run -d -p 80:80 20uf/lap-symfony -v /your/project:/vhost/current/
 
 Run console mode
 ---------------

@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Michael COULLERET <michael.coulleret@vesperiagroup.com>
+MAINTAINER Michael COULLERET <michael@coulleret.pro>
 
 RUN apt-get update
 

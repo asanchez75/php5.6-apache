@@ -1,4 +1,4 @@
-# Symfony LAP
+# php5.6 with apache 
 
 > Symfony sandbox Linux Apache PHP
 
@@ -7,17 +7,17 @@
 Build image:
 ---------------
 
-    docker build -t "registry-docker/lap-symfony" . 
+    docker build -t "registry-docker/php5.6-apache" . 
 
 Run
 ---------------
 
-    docker run -d -p 80:80 registry-docker/lap-symfony -v /your/project:/vhost/current/
+    docker run -d -p 80:80 registry-docker/php5.6-apache  -v /your/project:/vhost/current/
 
 Run console mode
 ---------------
 
-    docker run -p 80:80 -a stdin -a stdout -i -t registry-docker/lap-symfony /bin/bash
+    docker run -p 80:80 -a stdin -a stdout -i -t registry-docker/php5.6-apache  /bin/bash
 
 
 ## License

@@ -2,7 +2,7 @@
 
 > Symfony sandbox Linux Apache PHP
 
-![enter image description here](https://circleci.com/gh/registry-docker/lap-symfony.svg?style=shield&circle-token=:circle-token)
+![enter image description here](https://circleci.com/gh/registry-docker/php5.6-apache.png?circle-token=:circle-token)
 
 Build image:
 ---------------

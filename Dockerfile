@@ -4,7 +4,7 @@ MAINTAINER Michael COULLERET <michael@coulleret.pro>
 RUN apt-get update
 
 # Install Apache
-RUN apt-get install -y apache2
+RUN apt-get install -y apache2 git
 
 RUN export LANG=C.UTF-8 && \
     apt-get install -y software-properties-common && \
@@ -13,7 +13,7 @@ RUN export LANG=C.UTF-8 && \
     apt-get update
 
 # Install PHP
-RUN apt-get install -y php5.6 php5.6-cli php5.6-readline php5.6-intl php5.6-cli php5.6-json php5.6-mongo php5.6-mysql php5.6-curl php5.6-dev php5.6-xdebug
+RUN apt-get install -y php5.6 php5.6-cli php5.6-readline php5.6-intl php5.6-cli php5.6-json php5.6-mongo php5.6-mysql php5.6-curl php5.6-dev php5.6-xdebug php5.6-mbstring php5.6-dom
 
 # Install expect
 RUN apt-get install -y expect
@@ -23,6 +23,9 @@ ADD ./template/apache2.conf /etc/apache2/apache2.conf
 ADD ./template/symfony.conf /etc/apache2/sites-available/symfony.conf
 ADD ./template/php.ini /etc/php5/apache2/
 ADD ./template/mongo.ini /usr/local/etc/php/conf.d/
+
+# Add composer
+RUN cd /usr/local/bin && curl -sS https://getcomposer.org/installer | php -- --filename=composer
 
 # a2enmod & a2ensite
 RUN a2enmod php5.6
